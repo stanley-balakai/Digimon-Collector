@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Digimon List</h1>
+
+{% for digimon in digimon  %}
+
+<a href="{% url 'detail' digimon.id %}">
+<div class="card">
+    <div class="card-content">
+        <div class="flex-container">
+        <div>
+        <span class="card-title"> {{digimon.name}} </span>
+        <p>Type: {{digimon.type}}</p>
+        <p>Prior Forms: {{digimon.pforms}}</p>
+        <p>Number: {{digimon.number}}</p>
+        
+        </div>
+        <div class="right">
+            <img width="100px" height="100px" src='{{digimon.picture}}'>
+            </div>
+        </div>
+    </div>
+</a>      
+</div>
+
+{% endfor %}
+
+{% endblock %}

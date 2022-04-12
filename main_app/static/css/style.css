@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer.page-footer {
+    padding-top: 0;
+    text-align: right;
+}
+
+.flex-container{
+    display:flex;
+    justify-content: space-between;
+}
+.navbar{
+    color:rgb(83, 163, 255) !important;;
+   }
+
+.page-footer{
+    background-color:rgb(83, 163, 255) !important;;
+   }
